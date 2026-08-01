@@ -7,7 +7,7 @@ filings.
 
 **Live dashboard:** [HubSpot SaaS Metrics Dashboard on Tableau Public](https://public.tableau.com/app/profile/daniel.ogunsaju/viz/HubSpotSaaSMetricsDashboard/Dashboard1)
 
-![HubSpot SaaS Metrics Dashboard](screenshots/dashboard_screenshot.png)
+![HubSpot SaaS Metrics Dashboard](Screenshots/dashboard_screenshot.png)
 
 ---
 
