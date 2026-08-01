@@ -1,0 +1,724 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='69de83a36c91ac9bee22ce8fca94bf1e752428dca0ff62220180c58079b9f751' _.fcp.WorkbookFingerprinting.true...creator-author-id='69de83a36c91ac9bee22ce8fca94bf1e752428dca0ff62220180c58079b9f751' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='0c76085def195c7a13c68ab29bdae478db21dfae42bc98f6c8d5d14b492b0ce0' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='0c76085def195c7a13c68ab29bdae478db21dfae42bc98f6c8d5d14b492b0ce0' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <repository-location id='HubSpotSaaSMetricsDashboard' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='SaaSMetricsSummary (saas_metrics_summary_export)' inline='true' name='federated.0162poy0qu6nd112651l318s2220' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='saas_metrics_summary_export' name='excel-direct.02hhonh0hrhewz17qgaku16ltxla'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/bunmi/Work/HUBSPOT  - SAAS - PROJECT/data/saas_metrics_summary_export.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.02hhonh0hrhewz17qgaku16ltxla' name='SaaSMetricsSummary' table='[SaaSMetricsSummary$]' type='table'>
+          <columns gridOrigin='A1:L14:no:A1:L14:0' header='yes' outcome='6'>
+            <column datatype='string' name='quarter' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='integer' name='total_revenue' ordinal='2' />
+            <column datatype='integer' name='subscription_revenue' ordinal='3' />
+            <column datatype='integer' name='sales_marketing_expense' ordinal='4' />
+            <column datatype='real' name='qoq_growth_pct' ordinal='5' />
+            <column datatype='real' name='yoy_growth_pct' ordinal='6' />
+            <column datatype='integer' name='customers' ordinal='7' />
+            <column datatype='real' name='net_revenue_retention' ordinal='8' />
+            <column datatype='integer' name='avg_subscription_revenue_per_customer' ordinal='9' />
+            <column datatype='string' name='derivation' ordinal='10' />
+            <column datatype='string' name='source_accession' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L14:no:A1:L14:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quarter</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[quarter]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>quarter</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_revenue]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>total_revenue</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subscription_revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[subscription_revenue]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>subscription_revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales_marketing_expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sales_marketing_expense]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>sales_marketing_expense</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>qoq_growth_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[qoq_growth_pct]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>qoq_growth_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yoy_growth_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[yoy_growth_pct]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>yoy_growth_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customers]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>customers</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_revenue_retention</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_revenue_retention]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>net_revenue_retention</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_subscription_revenue_per_customer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[avg_subscription_revenue_per_customer]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>avg_subscription_revenue_per_customer</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>derivation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[derivation]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>derivation</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_accession</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[source_accession]</local-name>
+            <parent-name>[SaaSMetricsSummary]</parent-name>
+            <remote-alias>source_accession</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='SaaSMetricsSummary' datatype='table' name='[__tableau_internal_object_id__].[SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2]' role='measure' type='quantitative' />
+      <column caption='Avg Subscription Revenue Per Customer' datatype='integer' name='[avg_subscription_revenue_per_customer]' role='measure' type='quantitative' />
+      <column caption='Customers' datatype='integer' name='[customers]' role='measure' type='quantitative' />
+      <column caption='Derivation' datatype='string' name='[derivation]' role='dimension' type='nominal' />
+      <column caption='Net Revenue Retention' datatype='real' name='[net_revenue_retention]' role='measure' type='quantitative' />
+      <column caption='Qoq Growth Pct' datatype='real' name='[qoq_growth_pct]' role='measure' type='quantitative' />
+      <column caption='Quarter' datatype='string' name='[quarter]' role='dimension' type='nominal' />
+      <column caption='Sales Marketing Expense' datatype='integer' name='[sales_marketing_expense]' role='measure' type='quantitative' />
+      <column caption='Source Accession' datatype='string' name='[source_accession]' role='dimension' type='nominal' />
+      <column caption='Subscription Revenue' datatype='integer' name='[subscription_revenue]' role='measure' type='quantitative' />
+      <column caption='Total Revenue' datatype='integer' name='[total_revenue]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column caption='Yoy Growth Pct' datatype='real' name='[yoy_growth_pct]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/k9/yzd_9k2s2ks0d5f2lpqmk4tr0000gn/T/tableau-temp/#TableauTemp_0vswkn11q62i9r0zp83ph1kepffd.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>quarter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[quarter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quarter</remote-alias>
+              <ordinal>0</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_revenue</remote-alias>
+              <ordinal>2</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subscription_revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[subscription_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subscription_revenue</remote-alias>
+              <ordinal>3</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sales_marketing_expense</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sales_marketing_expense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sales_marketing_expense</remote-alias>
+              <ordinal>4</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>qoq_growth_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[qoq_growth_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>qoq_growth_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>yoy_growth_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[yoy_growth_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>yoy_growth_pct</remote-alias>
+              <ordinal>6</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[customers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customers</remote-alias>
+              <ordinal>7</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_revenue_retention</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[net_revenue_retention]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_revenue_retention</remote-alias>
+              <ordinal>8</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_subscription_revenue_per_customer</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[avg_subscription_revenue_per_customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_subscription_revenue_per_customer</remote-alias>
+              <ordinal>9</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>derivation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[derivation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>derivation</remote-alias>
+              <ordinal>10</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>source_accession</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[source_accession]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>source_accession</remote-alias>
+              <ordinal>11</ordinal>
+              <family>SaaSMetricsSummary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='SaaSMetricsSummary' id='SaaSMetricsSummary_211E5BAE2FF04E959930144EE9FCA9E2'>
+            <properties context=''>
+              <relation connection='excel-direct.02hhonh0hrhewz17qgaku16ltxla' name='SaaSMetricsSummary' table='[SaaSMetricsSummary$]' type='table'>
+                <columns gridOrigin='A1:L14:no:A1:L14:0' header='yes' outcome='6'>
+                  <column datatype='string' name='quarter' ordinal='0' />
+                  <column datatype='integer' name='year' ordinal='1' />
+                  <column datatype='integer' name='total_revenue' ordinal='2' />
+                  <column datatype='integer' name='subscription_revenue' ordinal='3' />
+                  <column datatype='integer' name='sales_marketing_expense' ordinal='4' />
+                  <column datatype='real' name='qoq_growth_pct' ordinal='5' />
+                  <column datatype='real' name='yoy_growth_pct' ordinal='6' />
+                  <column datatype='integer' name='customers' ordinal='7' />
+                  <column datatype='real' name='net_revenue_retention' ordinal='8' />
+                  <column datatype='integer' name='avg_subscription_revenue_per_customer' ordinal='9' />
+                  <column datatype='string' name='derivation' ordinal='10' />
+                  <column datatype='string' name='source_accession' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Net Revenue Retention'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SaaSMetricsSummary (saas_metrics_summary_export)' name='federated.0162poy0qu6nd112651l318s2220' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0162poy0qu6nd112651l318s2220'>
+            <column caption='Net Revenue Retention' datatype='real' name='[net_revenue_retention]' role='measure' type='quantitative' />
+            <column-instance column='[quarter]' derivation='None' name='[none:quarter:nk]' pivot='key' type='nominal' />
+            <column caption='Quarter' datatype='string' name='[quarter]' role='dimension' type='nominal' />
+            <column-instance column='[net_revenue_retention]' derivation='Sum' name='[sum:net_revenue_retention:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0162poy0qu6nd112651l318s2220].[sum:net_revenue_retention:qk]</rows>
+        <cols>[federated.0162poy0qu6nd112651l318s2220].[none:quarter:nk]</cols>
+      </table>
+      <simple-id uuid='{34FCA80F-9762-416F-B89C-01974B7A7F72}' />
+    </worksheet>
+    <worksheet name='Revenue Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SaaSMetricsSummary (saas_metrics_summary_export)' name='federated.0162poy0qu6nd112651l318s2220' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0162poy0qu6nd112651l318s2220'>
+            <column-instance column='[quarter]' derivation='None' name='[none:quarter:nk]' pivot='key' type='nominal' />
+            <column caption='Quarter' datatype='string' name='[quarter]' role='dimension' type='nominal' />
+            <column-instance column='[total_revenue]' derivation='Sum' name='[sum:total_revenue:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Revenue' datatype='integer' name='[total_revenue]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0162poy0qu6nd112651l318s2220].[sum:total_revenue:qk]</rows>
+        <cols>[federated.0162poy0qu6nd112651l318s2220].[none:quarter:nk]</cols>
+      </table>
+      <simple-id uuid='{26292FE0-AFFD-43A5-917C-C53B527DCEC7}' />
+    </worksheet>
+    <worksheet name='YoY Growth %'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SaaSMetricsSummary (saas_metrics_summary_export)' name='federated.0162poy0qu6nd112651l318s2220' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0162poy0qu6nd112651l318s2220'>
+            <column-instance column='[quarter]' derivation='None' name='[none:quarter:nk]' pivot='key' type='nominal' />
+            <column caption='Quarter' datatype='string' name='[quarter]' role='dimension' type='nominal' />
+            <column-instance column='[yoy_growth_pct]' derivation='Sum' name='[sum:yoy_growth_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Yoy Growth Pct' datatype='real' name='[yoy_growth_pct]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0162poy0qu6nd112651l318s2220].[sum:yoy_growth_pct:qk]</rows>
+        <cols>[federated.0162poy0qu6nd112651l318s2220].[none:quarter:nk]</cols>
+      </table>
+      <simple-id uuid='{4B38E2B6-448D-400C-9C7F-7BB8BBE31B61}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='320' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98076' id='3' name='Revenue Trend' w='31992' x='1231' y='962'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98076' id='5' name='YoY Growth %' w='33384' x='33223' y='962'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98076' id='6' name='Net Revenue Retention' w='32162' x='66607' y='962'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='13' param='vert' type-v2='layout-flow' w='95734' x='2133' y='889'>
+                <zone fixed-size='280' h='32000' id='3' is-fixed='true' name='Revenue Trend' w='95734' x='2133' y='889'>
+                  <layout-cache minheight='223' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='32000' id='5' is-fixed='true' name='YoY Growth %' w='95734' x='2133' y='32889'>
+                  <layout-cache minheight='223' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='32000' id='6' is-fixed='true' name='Net Revenue Retention' w='95734' x='2133' y='64889'>
+                  <layout-cache minheight='223' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C5921A37-93CE-4A48-B21B-ED6186588AF6}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Revenue Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{927B25B4-FA5D-4045-99D9-B1DE410C9B69}' />
+    </window>
+    <window class='worksheet' name='YoY Growth %'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F7924C65-F534-4321-B740-0569EE644C77}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Net Revenue Retention'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E62BBC95-DBFF-4A6C-920F-1A42F6262A3F}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Net Revenue Retention'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='YoY Growth %'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B33EA7DF-6D84-4A0D-BDCF-A467AE464BF4}' />
+    </window>
+  </windows>
+</workbook>
