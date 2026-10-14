@@ -24,7 +24,7 @@ CREATE TABLE annual_metrics (
     year INT PRIMARY KEY,
     customers INT,
     avg_subscription_revenue_per_customer NUMERIC(10,2),
-    net_revenue_retention VARCHAR(10),
+    net_revenue_retention DECIMAL(5,2), -- stored as a number (103.90 = 103.9%) so tableau can chart it and sql can compare it
     source_accession VARCHAR(255)
 );
 
@@ -46,10 +46,10 @@ INSERT INTO quarterly_financials (quarter, total_revenue, subscription_revenue, 
 
 -- loading in the yearly data - straight from the 10-k "key business metrics" section
 INSERT INTO annual_metrics (year, customers, avg_subscription_revenue_per_customer, net_revenue_retention, source_accession) VALUES
-(2022, 167386, 11163, '110.3%', '0000950170-25-018873 (FY2024 10-K comparative column)'),
-(2023, 205091, 11384, '103.9%', '0000950170-25-018873 (FY2024 10-K comparative column)'),
-(2024, 247939, 11343, '102.2%', '0000950170-25-018873'),
-(2025, 288706, 11414, '103.5%', '0001193125-26-046646');
+(2022, 167386, 11163, 110.30, '0000950170-25-018873 (FY2024 10-K comparative column)'),
+(2023, 205091, 11384, 103.90, '0000950170-25-018873 (FY2024 10-K comparative column)'),
+(2024, 247939, 11343, 102.20, '0000950170-25-018873'),
+(2025, 288706, 11414, 103.50, '0001193125-26-046646');
 
 -- quick check everything loaded right - should say 13 and 4
 SELECT 'quarterly_financials row count:' AS label, COUNT(*) AS count FROM quarterly_financials;

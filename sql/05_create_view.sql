@@ -1,5 +1,5 @@
 -- turning the combined query into an actual view
--- so power bi can just connect to this instead of me re running the raw query every time
+-- so tableau can just connect to this instead of me re running the raw query every time
 
 USE hubspot_saas_project;
 

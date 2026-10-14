@@ -1,4 +1,4 @@
--- sanity checks before i touch power bi
+-- sanity checks before i build the tableau dashboard
 -- basically just making sure nothing is broken/missing before i build the dashboard on top of it
 
 USE hubspot_saas_project;
